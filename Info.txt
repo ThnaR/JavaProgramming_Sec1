@@ -1,0 +1,5 @@
+Student_id : 2313110708
+Stdent Name : Thanatchai Rounghathaitham
+Major : IT
+Level : 1
+Faculty : Information Technology
