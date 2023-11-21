@@ -11,7 +11,7 @@ public class Example2 {
 				+" customers is "+ frm.format(netPrice));
 		double serviceCharge = netPrice + (netPrice*3/100);
 		System.out.println("Add Service Charge 3% is "
-				+frm.format(serviceCharge));
+				+frm.format(serviceCharge)); //
 	}
 
 }
