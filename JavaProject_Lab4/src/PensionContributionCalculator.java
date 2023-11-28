@@ -30,27 +30,20 @@ public class PensionContributionCalculator {
 		 if (age<=55) {
 			 employeeContribution = contributableSalary * EMPLOYEE_RATE_55_AND_BELOW;
 			 employerContribution = contributableSalary * EMPLOYER_RATE_55_AND_BELOW;
-			 totalContribution = employeeContribution+employerContribution;
-			 
 		 }
 		 else if (age<=60) {
 			 employeeContribution = contributableSalary * EMPLOYEE_RATE_55_TO_60;
 			 employerContribution = contributableSalary * EMPLOYER_RATE_55_TO_60;
-			 totalContribution = employeeContribution+employerContribution;
-			 
 		 }
 		 else if (age<=65) {
 			 employeeContribution = contributableSalary * EMPLOYEE_RATE_60_TO_65;
 			 employerContribution = contributableSalary * EMPLOYER_RATE_60_TO_65;
-			 totalContribution = employeeContribution+employerContribution;
-			 
 		 }
 		 else {
 			 employeeContribution = contributableSalary * EMPLOYEE_RATE_65_ABOVE;
-			 employerContribution = contributableSalary * EMPLOYER_RATE_65_ABOVE;
-			 totalContribution = employeeContribution+employerContribution;
-			 
+			 employerContribution = contributableSalary * EMPLOYER_RATE_65_ABOVE; 
 		 }
+		 totalContribution = employeeContribution+employerContribution;
 		 System.out.println("The employee's contribution is: $"+frm.format(employeeContribution));
 		 System.out.println("The employer's contribution is: $"+frm.format(employerContribution));
 		 System.out.println("The total contribution is: $"+frm.format(totalContribution));
